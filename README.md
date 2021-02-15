@@ -10,8 +10,10 @@ Select text and Right click in terminal to convert the timestamp.
 
 1. Copy files to plugins directory
 
-    mkdir -p ~/.config/terminator/plugins
-    cp convert_timestamp.py  ~/.config/terminator/plugins/
+
+        mkdir -p ~/.config/terminator/plugins
+        cp convert_timestamp.py  ~/.config/terminator/plugins/
+
 
 2. Restart Terminator, go to `Context menu > Preferences > Plugins` and select
    the new plugin
