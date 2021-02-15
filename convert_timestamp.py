@@ -25,9 +25,9 @@ class TimestampConvertPlugin(plugin.Plugin):
             try:
                 reg = re.findall(r"([0-9]+\.*[0-9]*)\:", self.selectedtext)
                 if len(reg) > 0:
-                    d = datetime.fromtimestamp(float(reg[0]))
+                    d = datetime.utcfromtimestamp(float(reg[0]))
                 else:
-                    d = datetime.fromtimestamp(float(self.selectedtext))
+                    d = datetime.utcfromtimestamp(float(self.selectedtext))
                 displaystring = d.strftime('%Y-%m-%d %H:%M:%S')
                 item.set_label("Timestamp: %s" % displaystring)
                 item.set_sensitive(True)
