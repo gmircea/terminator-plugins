@@ -13,5 +13,5 @@ class JiraEIoTURLHandler(plugin.URLHandler):
 
     def callback(self, url):
         """Look for the number in the supplied string and return it as a URL"""
-        url_ = 'https://jira.%%62it%%64efender.biz/browse/%s' % url
+        url_ = 'https://%%62it%%64efender-csg.atlassian.net/browse/%s' % url
         return(url_)
